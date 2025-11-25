@@ -41,6 +41,10 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-neuron-yellow: var(--neuron-yellow);
+  --color-neuron-pink: var(--neuron-pink);
+  --color-neuron-cyan: var(--neuron-cyan);
+  --color-neuron-purple: var(--neuron-purple);
 }
 
 :root {
@@ -76,6 +80,11 @@
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
+/* --- COLORES PROYECTO NEURON --- */
+  --neuron-yellow: hsl(45 93% 47%);
+  --neuron-pink: hsl(330 81% 60%);
+  --neuron-cyan: hsl(190 90% 50%);
+  --neuron-purple: hsl(260 80% 55%);
 }
 
 .dark {
