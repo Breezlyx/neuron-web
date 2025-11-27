@@ -45,7 +45,7 @@ export function GallerySection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-slate-900">
-              Galería de Momentos <span className="text-purple-600">Inolvidables</span>
+              Galería de Momentos <span className="text-cyan-400">Inolvidables</span>
             </h2>
             <p className="max-w-[900px] text-slate-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Sonrisas reales, asombro genuino y ciencia en acción en cada una de nuestras fiestas.
