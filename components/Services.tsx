@@ -47,7 +47,7 @@ export function ServicesSection() { // Componente de la sección de servicios
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">Nuestros Experimentos</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">Nuestros <span className="text-pink-500">Experimentos</span></h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto text-pretty">
             Diversión explosiva y educativa
           </p>
