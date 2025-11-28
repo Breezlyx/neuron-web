@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import { useState } from "react"
 
@@ -16,11 +16,19 @@ export function Navbar() {
     { href: "#faqs", label: "FAQs" },
   ]
 
+  // Trigger para resaltar la sección CTA
+  const triggerHighlight = () => {
+    // Creamos y despachamos un evento personalizado llamado 'highlight-cta'
+    window.dispatchEvent(new Event("highlight-cta"))
+    // Cerramos el menú móvil si estuviera abierto
+    setIsOpen(false)
+  }
+
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-100 shadow-sm">
       <nav className="container mx-auto flex items-center justify-between h-16 px-4 md:px-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center group">
           <div className="relative w-16 h-16 transition-transform group-hover:scale-105">
             <Image src="/images/logo-neuron.png" alt="Neuron Logo" fill className="object-contain" priority />
           </div>
@@ -38,8 +46,9 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button asChild className="bg-primary hover:bg-primary/90 text-white font-semibold">
-            <Link href="#cotizar">Cotizar</Link>
+          {/* Listener en botón Cotizar */}
+          <Button asChild className="bg-primary hover:bg-primary/90 text-white font-semibold" onClick={triggerHighlight}>
+            <Link href="#cta">Cotizar</Link>
           </Button>
         </div>
 
@@ -51,27 +60,28 @@ export function Navbar() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-[280px] sm:w-[350px]">
-            <div className="flex flex-col gap-6 mt-8">
-              <div className="flex items-center gap-2 pb-4 border-b">
+            <SheetHeader className="text-left border-b pb-4">
+              <SheetTitle className="flex items-center gap-2">
                 <div className="relative w-8 h-8">
                   <Image src="/images/logo-neuron.png" alt="Neuron Logo" fill className="object-contain" />
                 </div>
                 <span className="text-lg font-bold">Neuron</span>
-              </div>
-
+              </SheetTitle>
+            </SheetHeader>
+            <div className="flex flex-col gap-4 mt-6 px-2">
               {navigationLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium text-gray-700 hover:text-primary transition-colors"
+                  className="text-lg font-medium text-gray-700 hover:text-primary transition-colors py-2"
                 >
                   {link.label}
                 </Link>
               ))}
-
-              <Button asChild className="bg-primary hover:bg-primary/90 text-white font-semibold mt-4">
-                <Link href="#cotizar" onClick={() => setIsOpen(false)}>
+              {/* Listener en botón Cotizar */}
+              <Button asChild className="bg-primary hover:bg-primary/90 text-white font-semibold mt-4 w-full" onClick={triggerHighlight}>
+                <Link href="#cta">
                   Cotizar
                 </Link>
               </Button>

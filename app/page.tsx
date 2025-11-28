@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/Hero"; // Componente Hero
 import { ServicesSection } from "@/components/Services" // Componente Servicios
 import { GallerySection } from "@/components/Gallery"; // Componente Galería
 import { FAQSection } from "@/components/FAQ"; // Componente FAQ
+import { CTASection } from "@/components/CTA"; // Componente CTA
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <ServicesSection />
       <GallerySection />
       <FAQSection />
+      <CTASection />
     </main>
   );
 }
