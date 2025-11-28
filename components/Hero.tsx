@@ -49,7 +49,7 @@ export function HeroSection() {
               className="w-full sm:w-auto text-base md:text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <Sparkles className="w-5 h-5 mr-2" />
-              Ver Servicios
+              <a href="#precios">Ver Servicios</a>
             </Button>
             <Button
               size="lg"
