@@ -7,7 +7,7 @@ import { CTASection } from "@/components/CTA"; // Componente CTA
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-pink-50">
       <HeroSection />
       <ServicesSection />
       <PricingSection />
