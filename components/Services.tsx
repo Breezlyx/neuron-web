@@ -43,7 +43,7 @@ const experiments = [ // Datos de los experimentos
 
 export function ServicesSection() { // Componente de la sección de servicios
   return (
-    <section id="servicios" className="py-20 px-4 bg-white">
+    <section id="servicios" className="py-20 px-4 bg-pink-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

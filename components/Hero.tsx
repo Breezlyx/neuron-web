@@ -5,7 +5,7 @@ import { Sparkles, Zap, Atom, FlaskConical } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-background overflow-hidden">
+    <section className="relative min-h-screen bg-pink-50 overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 text-primary/20 animate-bounce-slow">
           <Atom className="w-16 h-16 md:w-24 md:h-24" />

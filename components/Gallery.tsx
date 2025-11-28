@@ -8,7 +8,7 @@ import { X } from "lucide-react"
 const galleryImages = [
   {
     id: 1,
-    src: "/images/gallery/evento-1.jpg",
+    src: "/images/gallery/evento-1.JPG",
     alt: "Niños haciendo experimento de slime colorido",
   },
   {
@@ -18,7 +18,7 @@ const galleryImages = [
   },
   {
     id: 3,
-    src: "/images/gallery/evento-3.jpg",
+    src: "/images/gallery/evento-3.JPG",
     alt: "Niños creando burbujas gigantes",
   },
   {
@@ -33,14 +33,14 @@ const galleryImages = [
   },
   {
     id: 6,
-    src: "/images/gallery/evento-6.jpg",
+    src: "/images/gallery/evento-6.JPG",
     alt: "Grupo de niños felices en fiesta científica",
   },
 ]
 
 export function GallerySection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white" id="galeria">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-pink-50" id="galeria">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
