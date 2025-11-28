@@ -1,6 +1,6 @@
 # 🧠 Neuron - Cumpleaños Científicos Inolvidables
 
-![Neuron Banner](/public/neuron-science-logo-colorful.jpg)
+![Neuron Banner](/public/images/logo-neuron.png)
 
 > **MVP (Producto Mínimo Viable)** para el sitio web de Neuron, una empresa que lleva la magia de la ciencia y los experimentos a cumpleaños infantiles.
 
